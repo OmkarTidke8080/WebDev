@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videp - 1</title>
+<!--
+    The Cascade algorithm
+    1. Position and order of appearance the order in which yout CSS rules appear
+    2. Specificity : an algorithm that determines which CSS selector has the strongest match
+    3. Origin : The order in which CSS appears and wehere it comes from whether that is a browser style, CSS from a browser extension, or your authorised CSSS
+    4. Importance : smae CSS rules are weighted more heavily than others especially with the important rule type
+
+    // more preference will be given to the ID selctor and more than that to the inline style
+
+    // inline style ex : <h1 style="color: blue;" class="yellow cred cpurple">CSS Specificity</h1>
+    // inline style > ID selector > class or attribute selector > Universal selector
+
+-->
+    <style>
+        /* The specifity of this selector is 1 */
+        h1{
+            color : aqua;
+        }
+
+       /* The specifity of this selector is 10 */
+        .yellow
+        {
+            color: red;
+        }
+
+      /* The specifity of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+
+         /* The specifity of this selector is 10 */
+        [data-x = a]   
+        {
+            background-color: black;
+        }
+
+    </style>
+
+    <!--
+        // This is attribute selector
+          [data-x = a]   
+        {
+            background-color: black;
+        }
+    -->
+</head>
+<body>
+    <div>
+        <h1  class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>
