@@ -1,0 +1,21 @@
+.cards
+{
+    border: 2px solid black;
+    display: flow-root;  /* fit the content within the element*/
+}
+
+img
+{
+    float: left;
+}
+
+.card
+{
+    border: 2px solid red;
+}
+
+.card:nth-child(1)
+{
+    background-color: aqua;
+    clear: both; /*no element wil float on its right */
+}
