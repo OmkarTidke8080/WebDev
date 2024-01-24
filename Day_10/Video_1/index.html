@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animations </title>
+    <style>
+      .container
+      {
+        background-color: lightblue;
+        height: 80vh;
+        width: 30vw;
+
+      }
+
+      .box
+      {
+        width: 34px;
+        height: 55px;
+        /*background-color: aqua;*/
+     /*  animation: MyAnimations;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+       animation-timing-function: ease-out;
+      animation-timing-function: csubic-bezier(0,0,0,0.96);
+      animation-delay: 2s;
+      animation-direction: alternate-reverse; 
+     /* animation-play-state: paused;   */
+     
+      animation: MyAnimations 2s ease-in-out 2s 3,
+                 MyAnimation2 3s ease-in-out 3s 1;
+      
+      }
+
+      
+
+      @keyframes MyAnimations {
+        from{
+         background-color: red;
+        }
+        to{
+             transform: translateX(1000px);
+             background-color: yellow;
+        }
+        
+      }
+
+      @keyframes MyAnimation2 {
+        0%{
+            transform: rotate(100deg);
+        }
+        2%{
+             transform: rotate(200deg);
+
+        }
+        5%{
+            transform: rotate(220deg);
+
+        }
+        80%{
+            transform: rotate(300deg);
+
+        }
+        00%{
+            transform: rotate(350deg);
+
+        }
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+
+    </div>
+</body>
+</html>
