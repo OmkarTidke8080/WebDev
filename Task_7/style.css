@@ -1,0 +1,101 @@
+/* style.css */
+@import url( 
+"https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"); 
+
+body { 
+	background-color: #0e0d0d; 
+	color: #333; 
+	font-family: "Roboto Mono", monospace; 
+  
+} 
+
+h1 { 
+	text-align: center; 
+	color: #eaf0ea; 
+    margin-top: 100px;
+}
+
+/* 
+.box
+{
+    margin-top: 20px;
+} */
+
+.generator { 
+	width: 250px; 
+	margin: 50px auto; 
+	padding: 20px; 
+	border-radius: 10px; 
+    height: 373px;
+    border: 2px solid rgb(31, 17, 224);
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.password { 
+	display: flex; 
+	border-radius: 10px; 
+	overflow: hidden; 
+    margin-top: 25px;
+    width: 255px;
+} 
+
+.password input { 
+	padding: 7px 10px; 
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+	border: 0; 
+	color: #fdf7f7; 
+} 
+
+button { 
+	text-transform: uppercase; 
+	padding: 5px 15px; 
+	border: 0; 
+	border-radius: 10px; 
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+} 
+
+div.password button { 
+	border-radius: 0; 
+    cursor: pointer;
+} 
+
+div.range { 
+	margin: 10px 0; 
+	display: grid; 
+	grid-template-columns: 1fr min-content; 
+} 
+
+div.range span { 
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+	padding: 10px; 
+	margin-left: 20px; 
+	min-width: 30px; 
+	text-align: center; 
+	border-radius: 50px; 
+} 
+
+ 
+
+div.options label { 
+	display: block; 
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+	padding: 10px; 
+	border-radius: 10px; 
+	cursor: pointer; 
+	font-family: sans-serif; 
+    margin: 5px;
+} 
+
+span
+{
+    color: white;
+}
+
+button.generate { 
+	width: 100%; 
+	margin-top: 10px; 
+	padding: 10px; 
+    cursor: pointer;
+    color: white;
+} 
+
